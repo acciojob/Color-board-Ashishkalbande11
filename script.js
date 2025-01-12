@@ -7,15 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		square.className = 'square';
 		container.appendChild(square);
 
-
 		square.addEventListener('mouseover', () => {
-			const randomColor = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`
-			square.style.backgroundColor = randomColor
-			setTimeout(() => {
-			square.style.backgroundColor = 'rgb(29, 29, 29)'
-		},1000)
-		})
+			const randomColor =`rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`;
+			square.style.backgroundColor = randomColor;
 
-		
+			setTimeout(() => {
+				square.style.backgroundColor = '#303841'
+			},1000)
+		})
 	}
-})
+});
